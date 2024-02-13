@@ -38,6 +38,9 @@ async function fetchTemplate(dir, target) {
  * @description The init function for the website, here I describe the different components avaliable.
  */
 function init(e) {
+    //Skip this for the current purpose, we are in development and want to direct traffic to Odoo without stoppage.
+    window.location.replace("https://www.cloud.azzurro.tech/");
+    return 0;
     console.info("Running init");
     console.info(e);
     Promise.all([
