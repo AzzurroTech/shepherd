@@ -1,0 +1,9 @@
+[submodule "vendor/vidi"]
+	path = vendor/vidi
+	url = https://github.com/Emperor42/vidi.git
+[submodule "vendor/veni"]
+	path = vendor/veni
+	url = https://github.com/Emperor42/veni.git
+[submodule "vendor/vici"]
+	path = vendor/vici
+	url = https://github.com/Emperor42/vici.git
