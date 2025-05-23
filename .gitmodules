@@ -7,3 +7,9 @@
 [submodule "vendor/vici"]
 	path = vendor/vici
 	url = https://github.com/Emperor42/vici.git
+[submodule "core"]
+	path = core
+	url = https://github.com/AzzurroTech/core.git
+[submodule "stenella"]
+	path = stenella
+	url = https://github.com/AzzurroTech/stenella.git
