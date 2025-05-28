@@ -1,0 +1,30 @@
+{
+  acme_server acme.acme.localhost
+  acme_server acme.acme.example.com
+  acme_client_ip_address "127.0.0.1"
+  debug
+}
+
+{
+  :80 {
+    redirect https://{host}{uri}
+  }
+
+  :443 {
+    tls {
+      http {
+        auto acme
+        reverse_proxy {
+          http://nextcloud:8080 {
+            port 8080
+            path /nextcloud
+          }
+          http://wordpress:8081
+          {
+            path /wordpress
+          }
+        }
+      }
+    }
+  }
+}
