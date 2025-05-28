@@ -1,0 +1,9 @@
+caddy/*
+db_data/*
+!db_data/SHEPHERD.md
+wp_data/*
+!wp_data/SHEPHERD.md
+wordpress_data/*
+!wordpress_data/SHEPHERD.md
+nextcloud_data/*
+!nextcloud_data/SHEPHERD.md
