@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shepherd – Tag Feed + Contextual Ads</title>
+  <link rel="stylesheet" href="shepherd.css">
+</head>
+<body>
+
+  <!-- Container for the tag feed -->
+  <section id="tag-feed" class="shepherd-feed"></section>
+
+  <!-- Container where the selected ad will be rendered -->
+  <section id="ad-slot" class="shepherd-ad"></section>
+
+  <script src="shepherd.js"></script>
+  <script>
+    // Example initialization – you can change these values at runtime
+    Shepherd.init({
+      feedElementId: 'tag-feed',
+      adSlotId: 'ad-slot',
+      visibleTagCount: 6,
+      tagSpacingPx: 12,
+      // Sample tags – in a real app these would come from your CMS / DB
+      tags: [
+        { text: 'AI',          keywords: ['artificial intelligence','machine learning'] },
+        { text: 'Privacy',     keywords: ['encryption','vpn','secure messaging'] },
+        { text: 'Travel',      keywords: ['flights','hotels','tourism'] },
+        { text: 'Finance',     keywords: ['crypto','stocks','banking'] },
+        { text: 'Health',      keywords: ['wellness','nutrition','fitness'] },
+        { text: 'Gaming',      keywords: ['esports','pc gaming','consoles'] },
+        { text: 'Education',   keywords: ['online courses','e‑learning','MOOC'] },
+        { text: 'Environment', keywords: ['climate','renewable energy','sustainability'] }
+      ]
+    });
+  </script>
+</body>
+</html>
